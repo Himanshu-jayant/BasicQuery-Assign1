@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Javascript</title>
+</head>
+<body>
+   
+    <h1 style="text-align: center;">Javascript</h1>
+    <h3>Element in Array is: <i id="myarray"></i></h3>
+    <script src="jquery.js"></script>
+    <script>
+ var greet = function( person, message ) {
+  var greeting = 'Hello, ' + person + '!';
+ console.log( greeting + ' ' + message );
+};
+
+greet('Himanshu','How are You!');
+    </script>
+
+    <script>
+        var person = {
+  firstName : 'Himanshu',
+  lastName : 'Jayant'
+};
+
+var prop = 'lastName';
+console.log( 'First name: ' + person[ 'firstName' ] );
+console.log( 'Last name: ' + person[ prop ] );
+    </script>
+
+    <script  type="text/javascript">
+        var myArray = [ 'a', 'b', 'c' ];
+   
+        document.getElementById("myarray").innerHTML = myArray;
+var i;
+var len = myArray.length;
+
+for (i = 0; i < len; i = i + 1) {
+  console.log( 'item at index ' + i + ' is ' + myArray[ i ] );
+}
+    </script>
+    
+</body>
+</html>

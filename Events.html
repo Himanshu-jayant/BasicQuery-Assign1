@@ -1,0 +1,44 @@
+
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Event</title>
+</head>
+<body>
+
+    <h3 style="background-color: red;">Hover</h3>
+    <p>Click me</p>
+
+    <a href="http://jquery.com/">onClick You Will get Link</a>
+    <script src="jquery.js"></script>
+    <script>
+        $(  'p'  ).on( 'click', function( event ) {
+  console.log( event.type );    // The event type, eg. "click"
+  console.log( 'I was just clicked!' );
+  event.preventDefault();
+});
+</script>
+
+<script>
+    $( 'a' ).on( 'click', function( event ) {
+   event.preventDefault();
+   console.log( $( this ).attr( 'href' ) );
+ });
+ 
+ </script>
+
+<script>
+
+    $("h3").hover(function(){
+
+    alert("You entered Hover!");
+    },
+function(){
+  alert("Bye! You now leave Hover!");
+  });
+
+ </script>
+  
+</body>
+</html>

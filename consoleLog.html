@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>console</title>
+</head>
+<body>
+    <a href="http://jquery.com/">jQuery</a>
+    <script src="jquery.js"></script>
+    <script>
+ 
+    $( document ).ready(function() {
+
+        $( 'a' ).click(function( event ) {
+          console.log( 'clicked', $( this ).text() );
+          event.preventDefault();
+          $( this ).hide( "slow" );//Special effects
+       
+    });
+});
+    </script>
+</body>
+</html>
